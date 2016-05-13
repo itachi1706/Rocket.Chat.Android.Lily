@@ -28,6 +28,6 @@ public class RocketChatApplication extends Application {
 
         CrashlyticsCore core = new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build();
         Fabric.with(this, new Crashlytics.Builder().core(core).build());
-        Repro.setup(BuildConfig.REPRO_APP_TOKEN);
+        //Repro.setup(BuildConfig.REPRO_APP_TOKEN);
     }
 }

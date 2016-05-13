@@ -17,7 +17,7 @@ public class ServerConfig extends AbstractModel {
     public enum AuthType {
         EMAIL("email")
         ,GITHUB("github")
-        ,TWITTER("twitter")
+        //,TWITTER("twitter")
 
         ,UNSPECIFIED("")
         ;//------------

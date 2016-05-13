@@ -144,7 +144,7 @@ public class ServerAuthConfigFragment extends AbstractFragment {
 
         JSONObject providers = conf.getOAuthProviders();
         setButtonEnabled(R.id.btn_login_github,!providers.isNull("github"));
-        setButtonEnabled(R.id.btn_login_twitter,!providers.isNull("twitter"));
+        //setButtonEnabled(R.id.btn_login_twitter,!providers.isNull("twitter"));
 
         try {
             if (!providers.isNull("github")) {

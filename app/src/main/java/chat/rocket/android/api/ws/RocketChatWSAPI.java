@@ -48,7 +48,8 @@ public class RocketChatWSAPI {
     }
 
     public Task<DDPClientCallback.Connect> connect() {
-        return mDDPClient.connect("wss://"+mHostName+"/websocket");
+        //return mDDPClient.connect("wss://"+mHostName+"/websocket");
+        return mDDPClient.connect("ws://"+mHostName+"/websocket");
     }
 
     public Task<DDPClientCallback.RPC> login(final String username, final String hashedPassword) throws JSONException {
